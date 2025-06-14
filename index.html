@@ -1,47 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Neg8tiveSpace</title>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet" />
-<style>
-  body, html {
-    height: 100%;
-    margin: 0;
-    background: #fafafa;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Montserrat', sans-serif;
-    color: #111;
-  }
-  .container {
-    display: flex;
-    align-items: center;
-    font-weight: 300;
-    font-size: 3rem;
-    letter-spacing: 0.18em;
-  }
-  .infinity {
-    font-weight: 500;
-    margin: 0 0.15em;
-    font-size: 3.6rem;
-    color: #111;
-    background: #f0f0f3;
-    border-radius: 12px;
-    padding: 0.1em 0.25em;
-    box-shadow:
-      6px 6px 8px #d1d1d9,
-      -6px -6px 8px #ffffff;
-  }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>neg8tivespace</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .logo {
+      font-weight: 600;
+      font-size: 5rem;
+      letter-spacing: 0.3em;
+      color: #333;
+      text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+      user-select: none;
+      display: flex;
+      align-items: center;
+    }
+    .logo span {
+      display: inline-block;
+      /* spacing handled by letter-spacing on parent */
+    }
+    .infinity {
+      font-weight: 900;
+      font-size: 5.2rem;
+      color: #000;
+      margin: 0 0.2em;
+      user-select: none;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    Neg
+  <div class="logo" aria-label="Neg infinity tive Space">
+    <span>Neg</span>
     <span class="infinity">∞</span>
-    tive Space
+    <span>tive Space</span>
   </div>
 </body>
 </html>
