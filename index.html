@@ -1,79 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Neg8tive Space</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet" />
-  <style>
-    body {
-      margin: 0;
-      height: 100vh;
-      background: radial-gradient(ellipse at center, #000000, #0a0a0a);
-      color: #00fff7;
-      font-family: 'Montserrat', sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
-      position: relative;
-    }
-    .logo-container {
-      font-weight: 700;
-      font-size: 4rem;
-      letter-spacing: 0.7rem;
-      text-shadow:
-        0 2px 8px rgba(0,255,247,0.7),
-        0 5px 15px rgba(0,255,247,0.4);
-      user-select: none;
-      display: flex;
-      align-items: center;
-    }
-    .space {
-      margin-left: 0.7rem;
-    }
-    .infinity {
-      width: 120px;
-      height: 60px;
-      margin: 0 0.4rem;
-      fill: #000000;
-      stroke: #00fff7;
-      stroke-width: 2;
-      filter:
-        drop-shadow(0 0 6px #00fff7);
-      flex-shrink: 0;
-    }
-    /* Stars */
-    body::before {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background:
-        radial-gradient(2px 2px at 20% 25%, #00fff7 99%, transparent 100%),
-        radial-gradient(1.5px 1.5px at 50% 70%, #00fff7 99%, transparent 100%),
-        radial-gradient(2.5px 2.5px at 80% 30%, #00fff7 99%, transparent 100%),
-        radial-gradient(1.8px 1.8px at 70% 80%, #00fff7 99%, transparent 100%);
-      background-repeat: repeat;
-      background-size: 150px 150px;
-      pointer-events: none;
-      z-index: 0;
-      animation: twinkle 4s infinite alternate;
-    }
-    @keyframes twinkle {
-      0% { opacity: 0.7; }
-      100% { opacity: 1; }
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Neg8tiveSpace</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet" />
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    background: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #111;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    font-size: 3rem;
+    letter-spacing: 0.18em;
+  }
+  .infinity {
+    font-weight: 500;
+    margin: 0 0.15em;
+    font-size: 3.6rem;
+    color: #111;
+    background: #f0f0f3;
+    border-radius: 12px;
+    padding: 0.1em 0.25em;
+    box-shadow:
+      6px 6px 8px #d1d1d9,
+      -6px -6px 8px #ffffff;
+  }
+</style>
 </head>
 <body>
-  <div class="logo-container" role="banner" aria-label="Neg8tive Space logo">
-    NEG
-    <svg class="infinity" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 32" aria-hidden="true" focusable="false" >
-      <path d="M10 16c0-5 7-12 18-12s18 7 18 12-7 12-18 12S10 21 10 16z
-      M28 16c0-3 5-7 10-7s10 4 10 7-5 7-10 7-10-4-10-7z"/>
-    </svg>
-    TIVE<span class="space">SPACE</span>
+  <div class="container">
+    Neg
+    <span class="infinity">∞</span>
+    tive Space
   </div>
 </body>
 </html>
