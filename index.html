@@ -3,81 +3,77 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Neg8tiveSpace</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet" />
+  <title>Neg8tive Space</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet" />
   <style>
     body {
       margin: 0;
       height: 100vh;
-      background: #111;
-      overflow: hidden;
+      background: radial-gradient(ellipse at center, #000000, #0a0a0a);
+      color: #00fff7;
       font-family: 'Montserrat', sans-serif;
-      color: #eee;
       display: flex;
       justify-content: center;
       align-items: center;
+      overflow: hidden;
       position: relative;
     }
-    .stars {
+    .logo-container {
+      font-weight: 700;
+      font-size: 4rem;
+      letter-spacing: 0.7rem;
+      text-shadow:
+        0 2px 8px rgba(0,255,247,0.7),
+        0 5px 15px rgba(0,255,247,0.4);
+      user-select: none;
+      display: flex;
+      align-items: center;
+    }
+    .space {
+      margin-left: 0.7rem;
+    }
+    .infinity {
+      width: 120px;
+      height: 60px;
+      margin: 0 0.4rem;
+      fill: #000000;
+      stroke: #00fff7;
+      stroke-width: 2;
+      filter:
+        drop-shadow(0 0 6px #00fff7);
+      flex-shrink: 0;
+    }
+    /* Stars */
+    body::before {
+      content: '';
       position: absolute;
       width: 100%;
       height: 100%;
-      background: transparent;
-      box-shadow:
-        20px 30px 2px 1px #fff,
-        100px 80px 2px 1px #fff,
-        160px 120px 2px 1px #fff,
-        200px 50px 2px 1px #fff,
-        250px 150px 2px 1px #fff,
-        320px 70px 2px 1px #fff,
-        400px 90px 2px 1px #fff,
-        470px 40px 2px 1px #fff,
-        520px 130px 2px 1px #fff;
-      animation: twinkle 3s infinite ease-in-out alternate;
+      background:
+        radial-gradient(2px 2px at 20% 25%, #00fff7 99%, transparent 100%),
+        radial-gradient(1.5px 1.5px at 50% 70%, #00fff7 99%, transparent 100%),
+        radial-gradient(2.5px 2.5px at 80% 30%, #00fff7 99%, transparent 100%),
+        radial-gradient(1.8px 1.8px at 70% 80%, #00fff7 99%, transparent 100%);
+      background-repeat: repeat;
+      background-size: 150px 150px;
       pointer-events: none;
       z-index: 0;
+      animation: twinkle 4s infinite alternate;
     }
     @keyframes twinkle {
-      0% { opacity: 0.6; }
-      50% { opacity: 1; }
-      100% { opacity: 0.6; }
-    }
-    .logo-container {
-      font-size: 120px; /* bigger */
-      font-weight: 900;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      text-shadow: 
-        5px 5px 10px rgba(0,0,0,0.9),
-        10px 10px 20px rgba(0,0,0,0.7),
-        0 0 40px rgba(255,255,255,0.15);
-      user-select: none;
-      position: relative;
-      z-index: 1;
-      white-space: nowrap;
-    }
-    .infinity {
-      font-size: 150px; /* bigger */
-      color: #00fff7;
-      margin: 0 30px;
-      font-weight: 900;
-      text-shadow: 
-        0 0 20px #00fff7,
-        0 0 40px #00fff7,
-        0 0 60px #00fff7,
-        0 0 80px #00fff7;
-      vertical-align: middle;
-    }
-    .space {
-      margin-left: 30px;
-      letter-spacing: 0.15em;
+      0% { opacity: 0.7; }
+      100% { opacity: 1; }
     }
   </style>
 </head>
 <body>
-  <div class="stars"></div>
-  <div class="logo-container">
-    NEG<span class="infinity">&#8734;</span>TIVE<span class="space">SPACE</span>
+  <div class="logo-container" role="banner" aria-label="Neg8tive Space logo">
+    NEG
+    <svg class="infinity" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 32" aria-hidden="true" focusable="false" >
+      <path d="M10 16c0-5 7-12 18-12s18 7 18 12-7 12-18 12S10 21 10 16z
+      M28 16c0-3 5-7 10-7s10 4 10 7-5 7-10 7-10-4-10-7z"/>
+    </svg>
+    TIVE<span class="space">SPACE</span>
   </div>
 </body>
 </html>
