@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Neg8tiveSpace</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet" />
   <style>
     body {
       margin: 0;
@@ -12,33 +12,43 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background: #fff;
+      background: #111; /* dark for drama */
       font-family: 'Montserrat', sans-serif;
-      color: #222;
+      color: #eee;
     }
     .logo-container {
-      font-size: 36px;
-      font-weight: 700;
+      font-size: 64px; /* bigger */
+      font-weight: 900;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      text-shadow: 
+        3px 3px 5px rgba(0,0,0,0.9),
+        6px 6px 10px rgba(0,0,0,0.7),
+        0 0 20px rgba(255,255,255,0.15);
       user-select: none;
-      letter-spacing: 0.15em; /* more spacing */
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.25); /* drop shadow */
     }
     .infinity {
-      font-size: 42px;
-      color: #4a90e2;
+      font-size: 80px;
+      color: #fff;
+      margin: 0 20px;
+      font-weight: 900;
+      text-shadow: 
+        0 0 15px #fff,
+        0 0 30px #0ff,
+        0 0 40px #0ff,
+        0 0 50px #0ff,
+        0 0 75px #0ff;
       vertical-align: middle;
-      margin: 0 8px;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.35); /* slightly stronger shadow */
     }
     .space {
-      margin-left: 8px;
+      margin-left: 20px;
       letter-spacing: 0.15em;
     }
   </style>
 </head>
 <body>
   <div class="logo-container">
-    Neg<span class="infinity">&#8734;</span>tive<span class="space">Space</span>
+    NEG<span class="infinity">&#8734;</span>TIVE<span class="space">SPACE</span>
   </div>
 </body>
 </html>
