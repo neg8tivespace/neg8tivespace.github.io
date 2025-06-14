@@ -1,50 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>neg8tivespace</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet" />
-  <style>
-    body {
-      margin: 0;
-      height: 100vh;
-      background: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: 'Montserrat', sans-serif;
-    }
-    .logo {
-      font-weight: 600;
-      font-size: 5rem;
-      letter-spacing: 0.3em;
-      color: #333;
-      text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
-      user-select: none;
-      display: flex;
-      align-items: center;
-      background: transparent;
-      border: none;
-      box-shadow: none;
-    }
-    .logo span {
-      display: inline-block;
-    }
-    .infinity {
-      font-weight: 300; /* thinner */
-      font-size: 6rem;   /* bigger */
-      color: #000;
-      margin: 0 0.2em;
-      user-select: none;
-      line-height: 1;
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>neg8tivespace</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet" />
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .logo {
+    font-weight: 600;
+    font-size: 5rem;
+    letter-spacing: 0.3em;
+    color: #333;
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+    user-select: none;
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+  }
+  .logo span {
+    display: inline-block;
+  }
+  .infinity {
+    width: 60px;
+    height: 40px;
+    margin: 0 0.3em;
+    user-select: none;
+    flex-shrink: 0;
+  }
+  svg path {
+    stroke: black;
+    stroke-width: 1.5; /* Very thin stroke */
+    fill: none;
+  }
+</style>
 </head>
 <body>
   <div class="logo" aria-label="Neg infinity tive Space">
     <span>Neg</span>
-    <span class="infinity">∞</span>
+    <svg class="infinity" viewBox="0 0 64 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" >
+      <path d="M15 20 C15 5, 35 5, 35 20 C35 35, 55 35, 55 20 C55 5, 35 5, 35 20" />
+    </svg>
     <span>tive Space</span>
   </div>
 </body>
