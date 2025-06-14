@@ -24,32 +24,35 @@
     user-select: none;
     display: flex;
     align-items: center;
-    background: transparent;
-    border: none;
-    box-shadow: none;
   }
   .logo span {
     display: inline-block;
   }
   .infinity {
-    width: 60px;
-    height: 40px;
+    width: 70px;
+    height: 50px;
     margin: 0 0.3em;
-    user-select: none;
     flex-shrink: 0;
   }
   svg path {
     stroke: black;
-    stroke-width: 3; /* Adjusted thickness */
+    stroke-width: 6;
     fill: none;
+    stroke-linejoin: round;
+    stroke-linecap: round;
   }
 </style>
 </head>
 <body>
   <div class="logo" aria-label="Neg infinity tive Space">
     <span>Neg</span>
-    <svg class="infinity" viewBox="0 0 64 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" >
-      <path d="M15 20 C15 5, 35 5, 35 20 C35 35, 55 35, 55 20 C55 5, 35 5, 35 20" />
+    <svg class="infinity" viewBox="0 0 64 50" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" >
+      <path d="M10 25
+               C10 10, 30 10, 32 25
+               C34 40, 54 40, 54 25
+               C54 10, 34 10, 32 25
+               C30 40, 10 40, 10 25
+               Z"/>
     </svg>
     <span>tive Space</span>
   </div>
