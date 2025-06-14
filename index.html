@@ -9,44 +9,73 @@
     body {
       margin: 0;
       height: 100vh;
+      background: #111;
+      overflow: hidden;
+      font-family: 'Montserrat', sans-serif;
+      color: #eee;
       display: flex;
       justify-content: center;
       align-items: center;
-      background: #111; /* dark for drama */
-      font-family: 'Montserrat', sans-serif;
-      color: #eee;
+      position: relative;
+    }
+    .stars {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      box-shadow:
+        20px 30px 2px 1px #fff,
+        100px 80px 2px 1px #fff,
+        160px 120px 2px 1px #fff,
+        200px 50px 2px 1px #fff,
+        250px 150px 2px 1px #fff,
+        320px 70px 2px 1px #fff,
+        400px 90px 2px 1px #fff,
+        470px 40px 2px 1px #fff,
+        520px 130px 2px 1px #fff;
+      animation: twinkle 3s infinite ease-in-out alternate;
+      pointer-events: none;
+      z-index: 0;
+    }
+    @keyframes twinkle {
+      0% { opacity: 0.6; }
+      50% { opacity: 1; }
+      100% { opacity: 0.6; }
     }
     .logo-container {
-      font-size: 64px; /* bigger */
+      font-size: 120px; /* bigger */
       font-weight: 900;
       letter-spacing: 0.15em;
       text-transform: uppercase;
       text-shadow: 
-        3px 3px 5px rgba(0,0,0,0.9),
-        6px 6px 10px rgba(0,0,0,0.7),
-        0 0 20px rgba(255,255,255,0.15);
+        5px 5px 10px rgba(0,0,0,0.9),
+        10px 10px 20px rgba(0,0,0,0.7),
+        0 0 40px rgba(255,255,255,0.15);
       user-select: none;
+      position: relative;
+      z-index: 1;
+      white-space: nowrap;
     }
     .infinity {
-      font-size: 80px;
-      color: #fff;
-      margin: 0 20px;
+      font-size: 150px; /* bigger */
+      color: #00fff7;
+      margin: 0 30px;
       font-weight: 900;
       text-shadow: 
-        0 0 15px #fff,
-        0 0 30px #0ff,
-        0 0 40px #0ff,
-        0 0 50px #0ff,
-        0 0 75px #0ff;
+        0 0 20px #00fff7,
+        0 0 40px #00fff7,
+        0 0 60px #00fff7,
+        0 0 80px #00fff7;
       vertical-align: middle;
     }
     .space {
-      margin-left: 20px;
+      margin-left: 30px;
       letter-spacing: 0.15em;
     }
   </style>
 </head>
 <body>
+  <div class="stars"></div>
   <div class="logo-container">
     NEG<span class="infinity">&#8734;</span>TIVE<span class="space">SPACE</span>
   </div>
